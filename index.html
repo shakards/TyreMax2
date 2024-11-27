@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TyreMax - Premium Tires</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            position: relative;
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .rolling-tire {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            animation: roll 2s linear infinite;
+        }
+
+        @keyframes roll {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://via.placeholder.com/1500x500') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Images Section */
+        #tyres {
+            padding: 20px;
+            text-align: center;
+        }
+
+        #tyres h3 {
+            font-size: 2em;
+            color: #f04e30;
+            margin-bottom: 20px;
+        }
+
+        #tyres .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        #tyres .images img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        #tyres .images img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/50" alt="Rolling Tire" class="rolling-tire">
+        <h1>TyreMax</h1>
+    </header>
+
+    <section id="hero">
+        <h2>Your Trusted Partner for Premium Tires</h2>
+    </section>
+
+    <section id="tyres">
+        <h3>Our Tyre Collection</h3>
+        <div class="images">
+            <!-- Replace these URLs with your own tire images -->
+            <img src="https://via.placeholder.com/200/000000/FFFFFF?text=Tire+1" alt="Tire 1">
+            <img src="https://via.placeholder.com/200/000000/FFFFFF?text=Tire+2" alt="Tire 2">
+            <img src="https://via.placeholder.com/200/000000/FFFFFF?text=Tire+3" alt="Tire 3">
+            <img src="https://via.placeholder.com/200/000000/FFFFFF?text=Tire+4" alt="Tire 4">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TyreMax. All rights reserved.</p>
+    </footer>
+</body>
+</html>
